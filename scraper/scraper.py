@@ -45,39 +45,39 @@ def login_to_comunio(username, password):
         market_button.click()
         time.sleep(3)  # Esperar para que cargue la página del mercado
 
-        # Recoger la información de los jugadores
+        players_data = []
         players = driver.find_elements(By.XPATH, "//div[contains(@class, 'csspt-row') and contains(@ng-repeat, 'marketItem in vm.marketItems track by')]")
         for player in players:
             try:
                 # Obtener el nombre del jugador
-                player_name = player.find_element(By.XPATH, "//span[contains(@class, 'bg-wrapper basic')]//a[contains(@class, 'csspt-name')]//div[contains(@class, 'text-to-slide')]").text
-
-
-
+                player_name = player.find_element(By.XPATH, ".//div[contains(@class, 'text-to-slide')]").text
                 # Obtener el nombre del propietario
-                # propietario = player.find_element(By.XPATH, ".//span[contains(@class, 'csspt-owner__text--unlinked')]").text
-                # # Obtener el valor de mercado
-                # valor_mercado = player.find_element(By.XPATH, ".//span[contains(@class, 'csspt-marketvalue')]").text
-                # # Obtener la oferta mínima
-                # oferta_minima = player.find_element(By.XPATH, ".//span[contains(@class, 'csspt-price')]").text
+                owner = player.find_element(By.XPATH, ".//span[contains(@class, 'csspt-owner__text--unlinked')]").text
+                # Filtrar solo los jugadores cuyo propietario sea 'Computer'
+                if owner.lower() == "computer":
+                    # Obtener el valor de mercado
+                    market_value = player.find_element(By.XPATH, ".//span[contains(@class, 'csspt-marketvalue')]").text
+                    # Obtener la oferta mínima
+                    minimum_offer = player.find_element(By.XPATH, ".//span[contains(@class, 'csspt-price')]").text
 
-                print("Player Information:")
-                print(f"Jugador: {player_name}")
-                # print(f"Propietario: {propietario}")
-                # print(f"Valor de mercado: {valor_mercado}")
-                # print(f"Oferta mínima: {oferta_minima}")
-                print("-----------------------------")
+                    player_info = {
+                        "name": player_name,
+                        "owner": owner,
+                        "market_value": market_value,
+                        "minimum_offer": minimum_offer
+                    }
+                    players_data.append(player_info)
+
+
             except Exception as e:
-                print("Error al extraer datos del jugador: ", str(e))
+                print("Error extracting player data: ", str(e))
 
-        # Mantener la ventana abierta para poder observar
-        input("Presiona Enter para cerrar el navegador...")  # Mantener la ventana abierta hasta que el usuario lo indique
-
-        return driver
-
+        print(players_data)
+        
+        return players_data
     except Exception as e:
         print("Error durante la autenticación:", str(e))
-        input("Presiona Enter para cerrar el navegador después del error...")  # Mantener la ventana abierta si falla
+        # input("Presiona Enter para cerrar el navegador después del error...")  # Mantener la ventana abierta si falla
         driver.quit()
         return None
 
