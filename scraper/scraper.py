@@ -1,3 +1,4 @@
+from config import USERNAME, PASSWORD
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -8,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # Autenticarse en Comunio utilizando Selenium
-def login_to_comunio(username, password):
+def login_to_comunio():
     # Configurar el driver de Selenium
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service)
@@ -35,8 +36,8 @@ def login_to_comunio(username, password):
         username_input = driver.find_element(By.NAME, "input_login")
         password_input = driver.find_element(By.NAME, "input_pass")
 
-        username_input.send_keys(username)
-        password_input.send_keys(password)
+        username_input.send_keys(USERNAME)
+        password_input.send_keys(PASSWORD)
         password_input.send_keys(Keys.RETURN)
         time.sleep(5)  # Esperar unos segundos para que se procese el login
         
@@ -82,7 +83,3 @@ def login_to_comunio(username, password):
         return None
 
 # Ejecutar directamente para probar Selenium
-if __name__ == "__main__":
-    USERNAME = "juansataz"
-    PASSWORD = "VayaComunio"
-    login_to_comunio(USERNAME, PASSWORD)
