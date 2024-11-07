@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": [
+    {
+      "name": "Mbappé",
+      "owner": "Computer",
+      "market_value": "22.750.000",
+      "minimum_offer": "22.670.000"
+    },
+    {
+      "name": "Carlos Martín",
+      "owner": "Computer",
+      "market_value": "810.000",
+      "minimum_offer": "810.000"
+    }
+  ]
+}
