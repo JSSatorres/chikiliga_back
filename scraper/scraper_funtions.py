@@ -1,15 +1,24 @@
-from config import COMUNIO_USER, PASSWORD
+from config.settings import settings
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from scraper.utils_scraper import remove_diacritics
 
-def login_to_comunio():
+def configure_driver():
     service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service)
+    chrome_options = Options()
+    chrome_options.add_argument("user-agent= Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36")
+    chrome_options.add_argument("--ignore-certificate-errors")  # Ignora errores de certificado SSL
+    chrome_options.add_argument("--disable-web-security")       # Desactiva seguridad web
+    chrome_options.add_argument("--allow-running-insecure-content")  # Permite contenido no seguro
+    return webdriver.Chrome(service=service, options=chrome_options)
+
+def login_to_comunio():
+    driver = configure_driver()
 
     try:
         driver.get("https://www.comunio.es/")
@@ -32,11 +41,11 @@ def login_to_comunio():
         password_input = driver.find_element(By.NAME, "input_pass")
 
         username_input.clear()
-        username_input.send_keys(COMUNIO_USER)
+        username_input.send_keys(settings.comunio_user)
         time.sleep(2)
 
         password_input.clear()
-        password_input.send_keys(PASSWORD)
+        password_input.send_keys(settings.comunio_password)
         password_input.send_keys(Keys.RETURN)
         time.sleep(5)
         
@@ -90,162 +99,141 @@ def accept_cookies_comuniate(driver):
     except Exception:
         print("Cookie acceptance button not found or already dismissed.")
 
-def search_players_in_comuniate(players_json):
-    # Configure Selenium driver
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service)
+def search_player(driver, player_name):
+    icon_search = driver.find_element(By.XPATH, "//i[contains(@class, 'fa-search')]")
+    icon_search.click()
+    time.sleep(2)
+    player_name_with_diacritics = remove_diacritics(player_name)
+    print(player_name_with_diacritics)
+    driver.switch_to.active_element.send_keys(player_name_with_diacritics)
+    time.sleep(1)
 
-    # Array to store data of the found players
-    players_data = []
+
+def select_first_suggestion(driver):    
+    try:
+        first_suggestion = driver.find_element(By.XPATH, "//*[@id='suggestions2']/div[1]")
+        first_suggestion.click()
+        time.sleep(3)
+        return True
+    except Exception as e:
+        print("No se encontró sugerencia:", str(e))
+        return False
+    
+def extract_player_data(driver):
+    player_data = []
+    try:
+        # Encuentra el cuerpo de la tabla que contiene las jornadas
+        tbody = driver.find_element(By.XPATH, "//table[@class='table']//tbody")
+        rows = tbody.find_elements(By.TAG_NAME, "tr")
+        
+        # Recorre cada fila y extrae los datos de la jornada
+        for row in rows:
+            jornada_text, team_results, puntos, rating, icons = extract_row_data(row)
+            row_data = {
+                "jornada": jornada_text,
+                "resultados": team_results,
+                "puntos": puntos,
+                "rating": rating,
+                "icons": icons
+            }
+            player_data.append(row_data)
+        
+    except Exception as e:
+        print("No se encontraron datos de la tabla para")
+
+    return player_data
+
+
+def extract_row_data(row):
+    jornada_text, team_results, puntos, rating, icons = "", "", "", "", []
 
     try:
-        # Open the Comuniate page
-        driver.get("https://www.comuniate.com/")
-        time.sleep(3)  # Wait a few seconds for the page to load
+        # Verificar si es una fila de "Lesionado" o "No fue alineado"
+        lesionado_o_no_alineado = row.find_elements(By.XPATH, ".//span[contains(@class, 'bg-danger') or contains(text(), 'No fue alineado')]")
+        if lesionado_o_no_alineado:
+            # Extraer texto de la celda que contiene la información de "Lesionado" o "No fue alineado"
+            jornada_text = lesionado_o_no_alineado[0].text
+            return jornada_text, team_results, "N/A", "N/A", icons  # Devuelve "N/A" para puntos y rating si el jugador no fue alineado o está lesionado
 
-        # Accept cookies
-        accept_cookies_comuniate(driver)
+        # Si no es un caso especial, extraer información de la primera celda (jornada y resultados)
+        jornada_cell = row.find_element(By.XPATH, ".//td[1]/div")
+        jornada_text = jornada_cell.find_element(By.TAG_NAME, "strong").text
+        team_results = jornada_cell.text
+    except Exception as e:
+        print(f"Error extrayendo jornada o resultados: {e}")
 
-        # Iterate over each player in the JSON
-        for player_name in players_json["players"]:
+    try:
+        puntos_cell = row.find_element(By.XPATH, ".//td[2]")
 
-            
-            # Locate the search icon and click it to open the search box
-            icon_search = driver.find_element(By.XPATH, "//i[contains(@class, 'fa-search')]")
-            icon_search.click()
-            time.sleep(2)
-            
-            # Directly type the player's name, assuming the search box is now focused
-            player_name_with_diacritics = remove_diacritics(player_name)
-            print(player_name_with_diacritics)
-            driver.switch_to.active_element.send_keys(player_name_with_diacritics)
-            time.sleep(1)  # Wait for suggestions to load
-            
-            # Select and click the first suggestion if present
-            try:
-                first_suggestion = driver.find_element(By.XPATH, "//*[@id='suggestions2']/div[1]")
-                first_suggestion.click()
-                time.sleep(3)  # Wait for the player's profile to load
+        # Intentar extraer puntos si existen
+        try:
+            puntos_element = puntos_cell.find_element(By.CLASS_NAME, "puntos")
+            puntos = puntos_element.text if puntos_element else "N/A"
+            print(f"Puntos: {puntos}")
+        except Exception as e:
+            print(f"Error extrayendo puntos: {e}")
 
-                # Extract player information (modify as needed based on page structure)
-                tbody = driver.find_element(By.TAG_NAME, "tbody")
-                rows = tbody.find_elements(By.TAG_NAME, "tr")  # Obtener todas las filas
+        # Intentar extraer rating si existe
+        try:
+            rating_element = puntos_cell.find_element(By.XPATH, ".//div[contains(@style, 'color: #555;')]")
+            rating = rating_element.text if rating_element else "N/A"
+            print(f"Rating: {rating}")
+        except Exception as e:
+            print(f"Error extrayendo rating: {e}")
 
-                # Iterar sobre cada fila y extraer los datos
-                for row in rows:
-                    # Extraer jornada y resultados (primera columna)
-                    jornada_cell = row.find_element(By.XPATH, ".//td[1]/div")
-                    print(jornada_cell)
-                    jornada_text = jornada_cell.find_element(By.TAG_NAME, "strong").text
-                    print(jornada_text)# Extraer texto de la jornada
-                    team_results = jornada_cell.text  # Esto incluye la jornada y el resultado de los equipos
-
-                    # Extraer puntos y detalles adicionales (segunda columna)
-                    puntos_cell = row.find_element(By.XPATH, ".//td[2]")
-                    puntos = puntos_cell.find_element(By.CLASS_NAME, "puntos").text  # Extraer puntos
-                    rating = puntos_cell.find_element(By.XPATH, ".//div[contains(@style, 'color: #555;')]").text  # Rating entre paréntesis
-
-                    # Buscar iconos adicionales (amarilla, roja, etc.) y su presencia
-                    additional_icons = puntos_cell.find_elements(By.TAG_NAME, "i")
-                    icons = [icon.get_attribute("class") for icon in additional_icons]  # Obtener todas las clases de iconos presentes
-
-                    # Guardar datos de cada fila
-                    row_data = {
-                        "jornada": jornada_text,
-                        "resultados": team_results,
-                        "puntos": puntos,
-                        "rating": rating,
-                        "icons": icons
-                    }
-                    players_data.append(row_data)
-
-            except Exception as e:
-                print(f"No data found for {player_name}. Error: {str(e)}")
-            
-            # Return to the main page for the next player
-            driver.get("https://www.comuniate.com/")
-            time.sleep(2)
+        # Extraer iconos adicionales, como tarjetas o sustituciones
+        try:
+            additional_icons = puntos_cell.find_elements(By.TAG_NAME, "i")
+            icons = [icon.get_attribute("class") for icon in additional_icons]
+            print(f"Icons: {icons}")
+        except Exception as e:
+            print(f"Error extrayendo iconos: {e}")
 
     except Exception as e:
-        print("Error accessing Comuniate:", str(e))
+        print(f"Error extrayendo datos de puntos o estado en la segunda celda: {e}")
+
+    return jornada_text, team_results, puntos, rating, icons
+
+
+def search_players_in_comuniate(players_json):
+    driver = configure_driver()
+    players_data = []  # Almacena todos los datos de los jugadores
     
+    print("Jugadores a buscar:", players_json["players"])  # Confirma los jugadores que se procesarán
+
+    try:
+        # Abrir la página principal de Comuniate
+        driver.get("https://www.comuniate.com/")
+        time.sleep(3)
+        accept_cookies_comuniate(driver)
+
+        # Iterar sobre cada jugador en el JSON
+        for player_name in players_json["players"]:
+            try:
+                print(f"Buscando jugador: {player_name}")  # Depuración: jugador actual
+                search_player(driver, player_name)  # Buscar al jugador
+                time.sleep(2)
+                if select_first_suggestion(driver):  # Seleccionar la primera sugerencia
+                    player_data = extract_player_data(driver)  # Extraer datos del jugador
+                    print(f"Datos extraídos para {player_name}: {player_data}")  # Depuración: datos extraídos
+                    time.sleep(2)
+                    if player_data:  # Verifica que los datos no estén vacíos
+                        players_data.append({player_name: player_data})  # Agregar los datos a la lista
+                else:
+                    print(f"No se encontró sugerencia para {player_name}")  # Depuración: sin sugerencia
+
+                # Regresar a la página de búsqueda sin recargar
+                driver.back()
+                time.sleep(2)
+            except Exception as e:
+                print(f"Error al procesar {player_name}: {str(e)}")  # Mensaje de error específico para cada jugador
+
+    except Exception as e:
+        print("Error general en el proceso de búsqueda:", str(e))
+
     finally:
-        # Keep the browser open for inspection
-        input("Press Enter to close the browser...")  # Wait for user input before closing
-        driver.quit()  # Close the browser after pressing Enter
-        
-    for player in players_data:
-        print(player)
-    
+        driver.quit()
+
     return players_data
 
 
-
-# def search_players_in_comuniate(players_json):
-    
-
-#     # Configure Selenium driver
-#     service = Service(ChromeDriverManager().install())
-#     driver = webdriver.Chrome(service=service)
-
-#     # Array to store data of the found players
-#     players_data = []
-
-#     try:
-#         # Open the Comuniate page
-#         driver.get("https://www.comuniate.com/")
-#         time.sleep(3)  # Wait a few seconds for the page to load
-
-#         # Accept cookies if the button is present
-#         try:
-#             accept_cookies = driver.find_element(By.XPATH, "//button[span[text()='ACEPTO']]")
-#             accept_cookies.click()
-#             time.sleep(2)
-#         except Exception:
-#             print("Cookie acceptance button not found or already dismissed.")
-
-#         # Iterate over each player in the JSON
-#         for player_name in players_json["players"]:
-#             print(f"Searching data for player: {player_name}")
-            
-#             # Locate the search icon and click it to open the search box
-#             icon_search = driver.find_element(By.XPATH, "//i[contains(@class, 'fa-search')]")
-#             icon_search.click()
-#             time.sleep(2)
-            
-#               # Directly type the player's name, assuming the search box is now focused
-#             # driver.switch_to.active_element.send_keys(player_name)
-#             driver.switch_to.active_element.send_keys('asano')
-#             time.sleep(1)  # Wait for suggestions to load
-            
-#             # Select and click the first suggestion if present
-#             try:
-#                 first_suggestion = driver.find_element(By.XPATH, "//*[@id='suggestions2']/div[1]")
-#                 first_suggestion.click()
-#                 time.sleep(3)  # Wait for the player's profile to load
-
-#                 # Extract player information (modify as needed based on page structure)
-#                 player_data = {}
-#                 player_data["name"] = player_name
-#                 player_data["team"] = driver.find_element(By.CLASS_NAME, "team-name").text  # Adjust selector as needed
-#                 player_data["market_value"] = driver.find_element(By.CLASS_NAME, "market-value").text  # Adjust selector as needed
-
-#                 # Add player data to the list
-#                 players_data.append(player_data)
-
-#             except Exception as e:
-#                 print(f"No data found for {player_name}. Error: {str(e)}")
-            
-#             # Return to the main page for the next player
-#             driver.get("https://www.comuniate.com/")
-#             time.sleep(2)
-
-#     except Exception as e:
-#         print("Error accessing Comuniate:", str(e))
-    
-#     finally:
-#         # Keep the browser open for inspection
-#         input("Press Enter to close the browser...")  # Wait for user input before closing
-#         driver.quit()  # Close the browser after pressing Enter
-
-#     return players_data
