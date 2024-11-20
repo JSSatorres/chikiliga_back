@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-from scraper.utils_scraper import remove_diacritics
+from backend.scraper.utils.utils_scraper import remove_diacritics
 
 def configure_driver():
     service = Service(ChromeDriverManager().install())
@@ -17,44 +17,7 @@ def configure_driver():
     chrome_options.add_argument("--allow-running-insecure-content")  # Permite contenido no seguro
     return webdriver.Chrome(service=service, options=chrome_options)
 
-def login_to_comunio():
-    driver = configure_driver()
 
-    try:
-        driver.get("https://www.comunio.es/")
-        time.sleep(3)
-
-        try:
-            acept_cookies = driver.find_element(By.CLASS_NAME, "css-47sehv")
-            acept_cookies.click()
-            time.sleep(2)
-        except Exception:
-            print("error finding cookies prompt")
-
-        # Find and click the login button to open the modal
-        boton_login = driver.find_element(By.XPATH, "//a[contains(@class, 'login-btn') and contains(@class, 'registration-btn-fill')]")
-        boton_login.click()
-        time.sleep(2)
-
-        # Enter credentials and log in
-        username_input = driver.find_element(By.NAME, "input_login")
-        password_input = driver.find_element(By.NAME, "input_pass")
-
-        username_input.clear()
-        username_input.send_keys(settings.comunio_user)
-        time.sleep(2)
-
-        password_input.clear()
-        password_input.send_keys(settings.comunio_password)
-        password_input.send_keys(Keys.RETURN)
-        time.sleep(5)
-        
-        return driver
-
-    except Exception as e:
-        print("Error during login:", str(e))
-        driver.quit()
-        return None
 
 def fetch_market_data(driver):
     players_data = []
