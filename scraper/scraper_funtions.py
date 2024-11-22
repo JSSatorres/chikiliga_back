@@ -1,21 +1,13 @@
-from config.settings import settings
+
 import time
-from selenium import webdriver
+
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+
+
+
 from backend.scraper.utils.utils_scraper import remove_diacritics
 
-def configure_driver():
-    service = Service(ChromeDriverManager().install())
-    chrome_options = Options()
-    chrome_options.add_argument("user-agent= Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36")
-    chrome_options.add_argument("--ignore-certificate-errors")  # Ignora errores de certificado SSL
-    chrome_options.add_argument("--disable-web-security")       # Desactiva seguridad web
-    chrome_options.add_argument("--allow-running-insecure-content")  # Permite contenido no seguro
-    return webdriver.Chrome(service=service, options=chrome_options)
+
 
 
 
@@ -54,13 +46,7 @@ def fetch_market_data(driver):
 
     return players_data
 
-def accept_cookies_comuniate(driver):
-    try:
-        accept_cookies = driver.find_element(By.XPATH, "//button[span[text()='ACEPTO']]")
-        accept_cookies.click()
-        time.sleep(2)
-    except Exception:
-        print("Cookie acceptance button not found or already dismissed.")
+
 
 def search_player(driver, player_name):
     icon_search = driver.find_element(By.XPATH, "//i[contains(@class, 'fa-search')]")
