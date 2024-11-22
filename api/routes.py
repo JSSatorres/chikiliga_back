@@ -1,7 +1,10 @@
 from fastapi import APIRouter
+from api.api_utils import transform_object_id
 from scraper.scraper import get_dashboard_data
 from services.player_service import player_service
-from api.api_utils import transform_object_id
+
+# from scraper.scraper import get_dashboard_data
+
 
 router = APIRouter()
 
