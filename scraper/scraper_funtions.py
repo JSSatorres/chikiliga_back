@@ -1,12 +1,8 @@
-
 import time
-
 from selenium.webdriver.common.by import By
-
-
-
-from backend.scraper.utils.utils_scraper import remove_diacritics
-
+from scraper.connection_pages.connection_pages import accept_cookies_comuniate
+from .utils.utils_scraper import remove_diacritics
+from scraper.config.config_scrapper import configure_driver
 
 
 
@@ -53,7 +49,6 @@ def search_player(driver, player_name):
     icon_search.click()
     time.sleep(2)
     player_name_with_diacritics = remove_diacritics(player_name)
-    print(player_name_with_diacritics)
     driver.switch_to.active_element.send_keys(player_name_with_diacritics)
     time.sleep(1)
 

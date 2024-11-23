@@ -1,5 +1,6 @@
-from scraper.scraper_funtions import login_to_comunio, fetch_market_data, search_players_in_comuniate
+from scraper.scraper_funtions import fetch_market_data, search_players_in_comuniate
 import json
+from scraper.connection_pages.connection_pages import login_to_comunio
 
 def get_dashboard_data():
     """
