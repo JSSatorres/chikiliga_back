@@ -1,8 +1,10 @@
 import time
-from ..config.config_scrapper import configure_driver
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from config.settings import settings
-from selenium.webdriver.common.keys import Keys
+from scraper.config.config_scrapper import configure_driver
+
+
 
 def login_to_comunio():
     driver = configure_driver()
@@ -42,7 +44,7 @@ def login_to_comunio():
         print("Error during login:", str(e))
         driver.quit()
         return None
-      
+    
 def accept_cookies_comuniate(driver):
     try:
         accept_cookies = driver.find_element(By.XPATH, "//button[span[text()='ACEPTO']]")
