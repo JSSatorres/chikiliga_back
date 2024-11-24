@@ -43,3 +43,8 @@ async def get_player_by_name(name: str):
 async def get_team():
     players = player_service.get_all_players()
     return [transform_object_id(player) for player in players]
+
+@router.get("/rivals")
+async def get_team():
+    players = player_service.get_all_players()
+    return [transform_object_id(player) for player in players]
