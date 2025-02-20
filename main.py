@@ -1,19 +1,17 @@
-
-from fastapi import FastAPI
 import uvicorn
-import os
-from api.routes import router
+from fastapi import FastAPI
 
+from context.teams.infrastructure.routes import team_router
+from context.players.infrastructure.routes import player_router
 
-app = FastAPI()
+app = FastAPI(
+    title="Football Stats API",
+    description="API to fetch football player stats from Comunio and Comuniazo",
+    version="1.0"
+)
 
-app.include_router(router)
-
-# port = int(os.getenv("PORT", 10000)) 
+app.include_router(team_router, prefix="/teams", tags=["Teams"])
+app.include_router(player_router, prefix="/players", tags=["Players"])
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
-    
-    
-# if __name__ == "__main__":
-#     uvicorn.run("main:app", host="0.0.0.0", port=port)    
+    uvicorn.run(app, host="0.0.0.0", port=8000)
