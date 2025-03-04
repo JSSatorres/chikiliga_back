@@ -1,0 +1,1610 @@
+[
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "MarketRepository",
+        "importPath": "context.market.domain.market_repository",
+        "description": "context.market.domain.market_repository",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market_repository",
+        "documentation": {}
+    },
+    {
+        "label": "MarketRepository",
+        "importPath": "context.market.domain.market_repository",
+        "description": "context.market.domain.market_repository",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market_repository",
+        "documentation": {}
+    },
+    {
+        "label": "MarketRepository",
+        "importPath": "context.market.domain.market_repository",
+        "description": "context.market.domain.market_repository",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market_repository",
+        "documentation": {}
+    },
+    {
+        "label": "MarketRepository",
+        "importPath": "context.market.domain.market_repository",
+        "description": "context.market.domain.market_repository",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market_repository",
+        "documentation": {}
+    },
+    {
+        "label": "MarketRepository",
+        "importPath": "context.market.domain.market_repository",
+        "description": "context.market.domain.market_repository",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market_repository",
+        "documentation": {}
+    },
+    {
+        "label": "MarketRepository",
+        "importPath": "context.market.domain.market_repository",
+        "description": "context.market.domain.market_repository",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market_repository",
+        "documentation": {}
+    },
+    {
+        "label": "Market",
+        "importPath": "context.market.domain.market",
+        "description": "context.market.domain.market",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market",
+        "documentation": {}
+    },
+    {
+        "label": "Market",
+        "importPath": "context.market.domain.market",
+        "description": "context.market.domain.market",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market",
+        "documentation": {}
+    },
+    {
+        "label": "Market",
+        "importPath": "context.market.domain.market",
+        "description": "context.market.domain.market",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market",
+        "documentation": {}
+    },
+    {
+        "label": "Market",
+        "importPath": "context.market.domain.market",
+        "description": "context.market.domain.market",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market",
+        "documentation": {}
+    },
+    {
+        "label": "Market",
+        "importPath": "context.market.domain.market",
+        "description": "context.market.domain.market",
+        "isExtraImport": true,
+        "detail": "context.market.domain.market",
+        "documentation": {}
+    },
+    {
+        "label": "MarketCreate",
+        "importPath": "context.market.schemas.market_create",
+        "description": "context.market.schemas.market_create",
+        "isExtraImport": true,
+        "detail": "context.market.schemas.market_create",
+        "documentation": {}
+    },
+    {
+        "label": "MarketCreate",
+        "importPath": "context.market.schemas.market_create",
+        "description": "context.market.schemas.market_create",
+        "isExtraImport": true,
+        "detail": "context.market.schemas.market_create",
+        "documentation": {}
+    },
+    {
+        "label": "MarketId",
+        "importPath": "context.market.domain.value_objects.market_id",
+        "description": "context.market.domain.value_objects.market_id",
+        "isExtraImport": true,
+        "detail": "context.market.domain.value_objects.market_id",
+        "documentation": {}
+    },
+    {
+        "label": "MarketResponse",
+        "importPath": "context.market.schemas.market_response",
+        "description": "context.market.schemas.market_response",
+        "isExtraImport": true,
+        "detail": "context.market.schemas.market_response",
+        "documentation": {}
+    },
+    {
+        "label": "MarketResponse",
+        "importPath": "context.market.schemas.market_response",
+        "description": "context.market.schemas.market_response",
+        "isExtraImport": true,
+        "detail": "context.market.schemas.market_response",
+        "documentation": {}
+    },
+    {
+        "label": "MarketResponse",
+        "importPath": "context.market.schemas.market_response",
+        "description": "context.market.schemas.market_response",
+        "isExtraImport": true,
+        "detail": "context.market.schemas.market_response",
+        "documentation": {}
+    },
+    {
+        "label": "StringValueObject",
+        "importPath": "shared.domain.value_objects.string_value_object",
+        "description": "shared.domain.value_objects.string_value_object",
+        "isExtraImport": true,
+        "detail": "shared.domain.value_objects.string_value_object",
+        "documentation": {}
+    },
+    {
+        "label": "StringValueObject",
+        "importPath": "shared.domain.value_objects.string_value_object",
+        "description": "shared.domain.value_objects.string_value_object",
+        "isExtraImport": true,
+        "detail": "shared.domain.value_objects.string_value_object",
+        "documentation": {}
+    },
+    {
+        "label": "AggregateRoot",
+        "importPath": "shared.domain.value_objects.aggregate_root",
+        "description": "shared.domain.value_objects.aggregate_root",
+        "isExtraImport": true,
+        "detail": "shared.domain.value_objects.aggregate_root",
+        "documentation": {}
+    },
+    {
+        "label": "AggregateRoot",
+        "importPath": "shared.domain.value_objects.aggregate_root",
+        "description": "shared.domain.value_objects.aggregate_root",
+        "isExtraImport": true,
+        "detail": "shared.domain.value_objects.aggregate_root",
+        "documentation": {}
+    },
+    {
+        "label": "AggregateRoot",
+        "importPath": "shared.domain.value_objects.aggregate_root",
+        "description": "shared.domain.value_objects.aggregate_root",
+        "isExtraImport": true,
+        "detail": "shared.domain.value_objects.aggregate_root",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "constr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "context.player.domain.player",
+        "description": "context.player.domain.player",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "context.player.domain.player",
+        "description": "context.player.domain.player",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "context.player.domain.player",
+        "description": "context.player.domain.player",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "context.player.domain.player",
+        "description": "context.player.domain.player",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "context.player.domain.player",
+        "description": "context.player.domain.player",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerRepository",
+        "importPath": "context.player.domain.player_repository",
+        "description": "context.player.domain.player_repository",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerRepository",
+        "importPath": "context.player.domain.player_repository",
+        "description": "context.player.domain.player_repository",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerRepository",
+        "importPath": "context.player.domain.player_repository",
+        "description": "context.player.domain.player_repository",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerRepository",
+        "importPath": "context.player.domain.player_repository",
+        "description": "context.player.domain.player_repository",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerRepository",
+        "importPath": "context.player.domain.player_repository",
+        "description": "context.player.domain.player_repository",
+        "isExtraImport": true,
+        "detail": "context.player.domain.player_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerCreate",
+        "importPath": "context.player.schemas.player_create",
+        "description": "context.player.schemas.player_create",
+        "isExtraImport": true,
+        "detail": "context.player.schemas.player_create",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerCreate",
+        "importPath": "context.player.schemas.player_create",
+        "description": "context.player.schemas.player_create",
+        "isExtraImport": true,
+        "detail": "context.player.schemas.player_create",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerId",
+        "importPath": "context.player.domain.value_objects.player_id",
+        "description": "context.player.domain.value_objects.player_id",
+        "isExtraImport": true,
+        "detail": "context.player.domain.value_objects.player_id",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerResponse",
+        "importPath": "context.player.schemas.player_response",
+        "description": "context.player.schemas.player_response",
+        "isExtraImport": true,
+        "detail": "context.player.schemas.player_response",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerResponse",
+        "importPath": "context.player.schemas.player_response",
+        "description": "context.player.schemas.player_response",
+        "isExtraImport": true,
+        "detail": "context.player.schemas.player_response",
+        "documentation": {}
+    },
+    {
+        "label": "context.player.infrastructure.services.player_scraping_service",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "context.player.infrastructure.services.player_scraping_service",
+        "description": "context.player.infrastructure.services.player_scraping_service",
+        "detail": "context.player.infrastructure.services.player_scraping_service",
+        "documentation": {}
+    },
+    {
+        "label": "TeamRepository",
+        "importPath": "context.team.domain.team_repository",
+        "description": "context.team.domain.team_repository",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TeamRepository",
+        "importPath": "context.team.domain.team_repository",
+        "description": "context.team.domain.team_repository",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TeamRepository",
+        "importPath": "context.team.domain.team_repository",
+        "description": "context.team.domain.team_repository",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TeamRepository",
+        "importPath": "context.team.domain.team_repository",
+        "description": "context.team.domain.team_repository",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TeamRepository",
+        "importPath": "context.team.domain.team_repository",
+        "description": "context.team.domain.team_repository",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TeamRepository",
+        "importPath": "context.team.domain.team_repository",
+        "description": "context.team.domain.team_repository",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TeamCreate",
+        "importPath": "context.team.schemas.team_create",
+        "description": "context.team.schemas.team_create",
+        "isExtraImport": true,
+        "detail": "context.team.schemas.team_create",
+        "documentation": {}
+    },
+    {
+        "label": "TeamCreate",
+        "importPath": "context.team.schemas.team_create",
+        "description": "context.team.schemas.team_create",
+        "isExtraImport": true,
+        "detail": "context.team.schemas.team_create",
+        "documentation": {}
+    },
+    {
+        "label": "Team",
+        "importPath": "context.team.domain.team",
+        "description": "context.team.domain.team",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team",
+        "documentation": {}
+    },
+    {
+        "label": "Team",
+        "importPath": "context.team.domain.team",
+        "description": "context.team.domain.team",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team",
+        "documentation": {}
+    },
+    {
+        "label": "Team",
+        "importPath": "context.team.domain.team",
+        "description": "context.team.domain.team",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team",
+        "documentation": {}
+    },
+    {
+        "label": "Team",
+        "importPath": "context.team.domain.team",
+        "description": "context.team.domain.team",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team",
+        "documentation": {}
+    },
+    {
+        "label": "Team",
+        "importPath": "context.team.domain.team",
+        "description": "context.team.domain.team",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team",
+        "documentation": {}
+    },
+    {
+        "label": "Team",
+        "importPath": "context.team.domain.team",
+        "description": "context.team.domain.team",
+        "isExtraImport": true,
+        "detail": "context.team.domain.team",
+        "documentation": {}
+    },
+    {
+        "label": "TeamId",
+        "importPath": "context.team.domain.value_objects.team_id",
+        "description": "context.team.domain.value_objects.team_id",
+        "isExtraImport": true,
+        "detail": "context.team.domain.value_objects.team_id",
+        "documentation": {}
+    },
+    {
+        "label": "TeamResponse",
+        "importPath": "context.team.schemas.team_response",
+        "description": "context.team.schemas.team_response",
+        "isExtraImport": true,
+        "detail": "context.team.schemas.team_response",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerController",
+        "importPath": "context.player.presentation.player_controller",
+        "description": "context.player.presentation.player_controller",
+        "isExtraImport": true,
+        "detail": "context.player.presentation.player_controller",
+        "documentation": {}
+    },
+    {
+        "label": "TeamController",
+        "importPath": "context.team.presentation.team_controller",
+        "description": "context.team.presentation.team_controller",
+        "isExtraImport": true,
+        "detail": "context.team.presentation.team_controller",
+        "documentation": {}
+    },
+    {
+        "label": "MarketController",
+        "importPath": "context.market.presentation.market_controller",
+        "description": "context.market.presentation.market_controller",
+        "isExtraImport": true,
+        "detail": "context.market.presentation.market_controller",
+        "documentation": {}
+    },
+    {
+        "label": "RedirectResponse",
+        "importPath": "starlette.responses",
+        "description": "starlette.responses",
+        "isExtraImport": true,
+        "detail": "starlette.responses",
+        "documentation": {}
+    },
+    {
+        "label": "CreateMarket",
+        "kind": 6,
+        "importPath": "context.market.application.create_market",
+        "description": "context.market.application.create_market",
+        "peekOfCode": "class CreateMarket:\n    def __init__(self, market_repository: MarketRepository):\n        self.market_repository = market_repository\n    async def execute(self, market_create: MarketCreate) -> Market:\n        try:\n            market = Market.create(**market_create.dict())\n            return await self.market_repository.save(market)\n        except Exception as e:\n            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))",
+        "detail": "context.market.application.create_market",
+        "documentation": {}
+    },
+    {
+        "label": "DeleteMarket",
+        "kind": 6,
+        "importPath": "context.market.application.delete_market",
+        "description": "context.market.application.delete_market",
+        "peekOfCode": "class DeleteMarket:\n    def __init__(self, market_repository: MarketRepository):\n        self.market_repository = market_repository\n    async def execute(self, market_id: str):\n        market_id_value = MarketId(market_id)\n        success = await self.market_repository.delete(market_id_value)\n        if not success:\n            raise HTTPException(\n                status_code=status.HTTP_404_NOT_FOUND,\n                detail=\"Market not found\"",
+        "detail": "context.market.application.delete_market",
+        "documentation": {}
+    },
+    {
+        "label": "GetAllMarkets",
+        "kind": 6,
+        "importPath": "context.market.application.get_all_markets",
+        "description": "context.market.application.get_all_markets",
+        "peekOfCode": "class GetAllMarkets:\n    def __init__(self, market_repository: MarketRepository):\n        self.market_repository = market_repository\n    async def execute(self) -> List[MarketResponse]:\n        markets = await self.market_repository.get_all()\n        if not markets:\n            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"No markets found\")\n        return [MarketResponse.from_orm(market) for market in markets]",
+        "detail": "context.market.application.get_all_markets",
+        "documentation": {}
+    },
+    {
+        "label": "GetMarket",
+        "kind": 6,
+        "importPath": "context.market.application.get_market",
+        "description": "context.market.application.get_market",
+        "peekOfCode": "class GetMarket:\n    def __init__(self, market_repository: MarketRepository):\n        self.market_repository = market_repository\n    async def execute(self, market_id: str) -> MarketResponse:\n        market = await self.market_repository.get_by_id(market_id)\n        if not market:\n            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Market not found\")\n        return MarketResponse.from_orm(market)",
+        "detail": "context.market.application.get_market",
+        "documentation": {}
+    },
+    {
+        "label": "MarketId",
+        "kind": 6,
+        "importPath": "context.market.domain.value_objects.market_id",
+        "description": "context.market.domain.value_objects.market_id",
+        "peekOfCode": "class MarketId(StringValueObject):\n    def __init__(self, value: str):\n        super().__init__(value)\n    @classmethod\n    def from_primitives(cls, plain_data: str) -> 'MarketId':\n        return cls(plain_data)\n    def to_primitives(self) -> str:\n        return self.value\n    def __eq__(self, other: 'MarketId') -> bool:\n        return isinstance(other, MarketId) and self.value == other.value",
+        "detail": "context.market.domain.value_objects.market_id",
+        "documentation": {}
+    },
+    {
+        "label": "Market",
+        "kind": 6,
+        "importPath": "context.market.domain.market",
+        "description": "context.market.domain.market",
+        "peekOfCode": "class Market(AggregateRoot):\n    def __init__(self, id: MarketId, name: str, players: list):\n        self.id = id\n        self.name = name\n        self.players = players\n    @staticmethod\n    def create(id: MarketId, name: str, players: list) -> 'Market':\n        return Market(id, name, players)\n    def to_primitives(self) -> dict:\n        return {",
+        "detail": "context.market.domain.market",
+        "documentation": {}
+    },
+    {
+        "label": "MarketRepository",
+        "kind": 6,
+        "importPath": "context.market.domain.market_repository",
+        "description": "context.market.domain.market_repository",
+        "peekOfCode": "class MarketRepository(ABC):\n    @abstractmethod\n    def get_by_id(self, market_id: str) -> Optional[Market]:\n        pass\n    @abstractmethod\n    def save(self, market: Market) -> Market:\n        pass\n    @abstractmethod\n    def get_all(self) -> List[Market]:\n        pass",
+        "detail": "context.market.domain.market_repository",
+        "documentation": {}
+    },
+    {
+        "label": "MarketScrapingService",
+        "kind": 6,
+        "importPath": "context.market.infrastructure.services.market_scraping_service",
+        "description": "context.market.infrastructure.services.market_scraping_service",
+        "peekOfCode": "class MarketScrapingService:\n    def __init__(self, market_repository: MarketRepository):\n        self.market_repository = market_repository\n    def scrape_market_data(self, url: str) -> List[Market]:\n        response = requests.get(url)\n        if response.status_code != 200:\n            raise Exception(\"Failed to fetch data from the market URL\")\n        soup = BeautifulSoup(response.content, 'html.parser')\n        market_data = self._parse_market_data(soup)\n        return market_data",
+        "detail": "context.market.infrastructure.services.market_scraping_service",
+        "documentation": {}
+    },
+    {
+        "label": "MongoMarketRepository",
+        "kind": 6,
+        "importPath": "context.market.infrastructure.mongo_market_repository",
+        "description": "context.market.infrastructure.mongo_market_repository",
+        "peekOfCode": "class MongoMarketRepository(MarketRepository):\n    def __init__(self, db_url: str, db_name: str):\n        self.client = MongoClient(db_url)\n        self.db = self.client[db_name]\n        self.collection = self.db['markets']\n    def get_by_id(self, market_id: str) -> Market:\n        data = self.collection.find_one({\"_id\": ObjectId(market_id)})\n        return Market(**data) if data else None\n    def save(self, market: Market) -> Market:\n        self.collection.update_one({\"_id\": market.id}, {\"$set\": market.to_dict()}, upsert=True)",
+        "detail": "context.market.infrastructure.mongo_market_repository",
+        "documentation": {}
+    },
+    {
+        "label": "MarketController",
+        "kind": 6,
+        "importPath": "context.market.presentation.market_controller",
+        "description": "context.market.presentation.market_controller",
+        "peekOfCode": "class MarketController:\n    # def __init__(self, market_service: market_service):\n    def __init__(self,):\n        # self.market_service = market_service\n        self.router = APIRouter()\n        self._add_routes()\n    def _add_routes(self):\n        self.router.post(\"/\", response_model=MarketResponse)(self.create_market)\n        self.router.get(\"/{market_id}\", response_model=MarketResponse)(self.get_market)\n        self.router.get(\"/\", response_model=list[MarketResponse])(self.get_all_markets)",
+        "detail": "context.market.presentation.market_controller",
+        "documentation": {}
+    },
+    {
+        "label": "MarketCreate",
+        "kind": 6,
+        "importPath": "context.market.schemas.market_create",
+        "description": "context.market.schemas.market_create",
+        "peekOfCode": "class MarketCreate(BaseModel):\n    name: str = Field(..., description=\"The name of the market\")\n    players: List[str] = Field(..., description=\"List of player IDs in the market\")\n    status: str = Field(..., description=\"The status of the market (e.g., active, inactive)\")\n    created_at: str = Field(..., description=\"The creation timestamp of the market\")",
+        "detail": "context.market.schemas.market_create",
+        "documentation": {}
+    },
+    {
+        "label": "MarketResponse",
+        "kind": 6,
+        "importPath": "context.market.schemas.market_response",
+        "description": "context.market.schemas.market_response",
+        "peekOfCode": "class MarketResponse(BaseModel):\n    id: str\n    name: str\n    players: List[str]  # List of player IDs in the market\n    status: str  # e.g., \"active\", \"closed\"\n    class Config:\n        orm_mode = True\n    def to_primitives(self):\n        return {\n            \"id\": self.id,",
+        "detail": "context.market.schemas.market_response",
+        "documentation": {}
+    },
+    {
+        "label": "CreatePlayer",
+        "kind": 6,
+        "importPath": "context.player.application.create_player",
+        "description": "context.player.application.create_player",
+        "peekOfCode": "class CreatePlayer:\n    def __init__(self, player_repository: PlayerRepository):\n        self.player_repository = player_repository\n    async def execute(self, player_create: PlayerCreate) -> Player:\n        player = Player.create(\n            name=player_create.name,\n            age=player_create.age,\n            position=player_create.position,\n            team=player_create.team\n        )",
+        "detail": "context.player.application.create_player",
+        "documentation": {}
+    },
+    {
+        "label": "GetAllPlayers",
+        "kind": 6,
+        "importPath": "context.player.application.get_all_players",
+        "description": "context.player.application.get_all_players",
+        "peekOfCode": "class GetAllPlayers:\n    def __init__(self, player_repository: PlayerRepository):\n        self.player_repository = player_repository\n    async def execute(self) -> List[Player]:\n        return await self.player_repository.get_all()",
+        "detail": "context.player.application.get_all_players",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerId",
+        "kind": 6,
+        "importPath": "context.player.domain.value_objects.player_id",
+        "description": "context.player.domain.value_objects.player_id",
+        "peekOfCode": "class PlayerId(BaseModel):\n    value: constr(min_length=1)\n    def __init__(self, value: str):\n        super().__init__(value=value)\n    def __eq__(self, other: 'PlayerId') -> bool:\n        return self.value == other.value\n    def to_primitives(self) -> dict:\n        return {\"value\": self.value}\n    @classmethod\n    def from_primitives(cls, plain_data: dict) -> 'PlayerId':",
+        "detail": "context.player.domain.value_objects.player_id",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "context.player.domain.player",
+        "description": "context.player.domain.player",
+        "peekOfCode": "class Player(AggregateRoot):\n    def __init__(self, id: PlayerId, name: str, position: str, team: str):\n        self.id = id\n        self.name = name\n        self.position = position\n        self.team = team\n    @classmethod\n    def create(cls, id: PlayerId, name: str, position: str, team: str) -> 'Player':\n        return cls(id, name, position, team)\n    def to_primitives(self) -> dict[str, Any]:",
+        "detail": "context.player.domain.player",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerRepository",
+        "kind": 6,
+        "importPath": "context.player.domain.player_repository",
+        "description": "context.player.domain.player_repository",
+        "peekOfCode": "class PlayerRepository(ABC):\n    @abstractmethod\n    def get_by_id(self, player_id: str) -> Optional[Player]:\n        pass\n    @abstractmethod\n    def save(self, player: Player) -> Player:\n        pass\n    @abstractmethod\n    def get_all(self) -> List[Player]:\n        pass",
+        "detail": "context.player.domain.player_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerScrapingService",
+        "kind": 6,
+        "importPath": "context.player.infrastructure.services.player_scraping_service",
+        "description": "context.player.infrastructure.services.player_scraping_service",
+        "peekOfCode": "class PlayerScrapingService:\n    def __init__(self, base_url: str):\n        self.base_url = base_url\n    def scrape_players(self) -> List[Player]:\n        response = requests.get(self.base_url)\n        if response.status_code != 200:\n            raise Exception(\"Failed to fetch data from the external source\")\n        soup = BeautifulSoup(response.content, 'html.parser')\n        players = self._parse_players(soup)\n        return players",
+        "detail": "context.player.infrastructure.services.player_scraping_service",
+        "documentation": {}
+    },
+    {
+        "label": "MongoPlayerRepository",
+        "kind": 6,
+        "importPath": "context.player.infrastructure.mongo_player_repository",
+        "description": "context.player.infrastructure.mongo_player_repository",
+        "peekOfCode": "class MongoPlayerRepository(PlayerRepository):\n    def __init__(self, db_url: str, db_name: str):\n        self.client = MongoClient(db_url)\n        self.db = self.client[db_name]\n        self.collection = self.db['players']\n    def get_by_id(self, player_id: str) -> Player:\n        data = self.collection.find_one({\"_id\": ObjectId(player_id)})\n        return Player(**data) if data else None\n    def save(self, player: Player) -> Player:\n        player_data = player.to_primitives()",
+        "detail": "context.player.infrastructure.mongo_player_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerController",
+        "kind": 6,
+        "importPath": "context.player.presentation.player_controller",
+        "description": "context.player.presentation.player_controller",
+        "peekOfCode": "class PlayerController:\n    # def __init__(self, player_service: player_scraping_service):\n    def __init__(self ):\n        # self.player_service = player_service\n        self.router = APIRouter()\n        self._add_routes()\n    def _add_routes(self):\n        self.router.post(\"/\", response_model=PlayerResponse)(self.create_player)\n        self.router.get(\"/{player_id}\", response_model=PlayerResponse)(self.get_player)\n        self.router.get(\"/\", response_model=list[PlayerResponse])(self.get_all_players)",
+        "detail": "context.player.presentation.player_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerCreate",
+        "kind": 6,
+        "importPath": "context.player.schemas.player_create",
+        "description": "context.player.schemas.player_create",
+        "peekOfCode": "class PlayerCreate(BaseModel):\n    name: str = Field(..., description=\"The name of the player\")\n    age: int = Field(..., ge=0, description=\"The age of the player\")\n    position: str = Field(..., description=\"The position of the player\")\n    team_id: str = Field(..., description=\"The ID of the team the player belongs to\")",
+        "detail": "context.player.schemas.player_create",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerResponse",
+        "kind": 6,
+        "importPath": "context.player.schemas.player_response",
+        "description": "context.player.schemas.player_response",
+        "peekOfCode": "class PlayerResponse(BaseModel):\n    id: str\n    name: str\n    position: str\n    team: str\n    market_value: float\n    class Config:\n        orm_mode = True\nclass PlayerListResponse(BaseModel):\n    players: List[PlayerResponse]",
+        "detail": "context.player.schemas.player_response",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerListResponse",
+        "kind": 6,
+        "importPath": "context.player.schemas.player_response",
+        "description": "context.player.schemas.player_response",
+        "peekOfCode": "class PlayerListResponse(BaseModel):\n    players: List[PlayerResponse]",
+        "detail": "context.player.schemas.player_response",
+        "documentation": {}
+    },
+    {
+        "label": "CreateTeam",
+        "kind": 6,
+        "importPath": "context.team.application.create_team",
+        "description": "context.team.application.create_team",
+        "peekOfCode": "class CreateTeam:\n    def __init__(self, team_repository: TeamRepository):\n        self.team_repository = team_repository\n    async def execute(self, team_create: TeamCreate) -> Team:\n        try:\n            team = Team.create(**team_create.dict())\n            return await self.team_repository.save(team)\n        except Exception as e:\n            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))",
+        "detail": "context.team.application.create_team",
+        "documentation": {}
+    },
+    {
+        "label": "GetAllTeams",
+        "kind": 6,
+        "importPath": "context.team.application.get_all_teams",
+        "description": "context.team.application.get_all_teams",
+        "peekOfCode": "class GetAllTeams:\n    def __init__(self, team_repository: TeamRepository):\n        self.team_repository = team_repository\n    async def execute(self) -> List[Team]:\n        return await self.team_repository.get_all()",
+        "detail": "context.team.application.get_all_teams",
+        "documentation": {}
+    },
+    {
+        "label": "GetTeam",
+        "kind": 6,
+        "importPath": "context.team.application.get_team",
+        "description": "context.team.application.get_team",
+        "peekOfCode": "class GetTeam:\n    def __init__(self, team_repository: TeamRepository):\n        self.team_repository = team_repository\n    async def execute(self, team_id: str) -> Optional[Team]:\n        team = await self.team_repository.get_by_id(team_id)\n        if not team:\n            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Team not found\")\n        return team",
+        "detail": "context.team.application.get_team",
+        "documentation": {}
+    },
+    {
+        "label": "TeamId",
+        "kind": 6,
+        "importPath": "context.team.domain.value_objects.team_id",
+        "description": "context.team.domain.value_objects.team_id",
+        "peekOfCode": "class TeamId(StringValueObject):\n    def __init__(self, value: str):\n        super().__init__(value)\n    @classmethod\n    def from_primitives(cls, plain_data: str) -> 'TeamId':\n        return cls(plain_data)\n    def to_primitives(self) -> str:\n        return self.value\n    def __eq__(self, other: 'TeamId') -> bool:\n        return isinstance(other, TeamId) and self.value == other.value",
+        "detail": "context.team.domain.value_objects.team_id",
+        "documentation": {}
+    },
+    {
+        "label": "Team",
+        "kind": 6,
+        "importPath": "context.team.domain.team",
+        "description": "context.team.domain.team",
+        "peekOfCode": "class Team(AggregateRoot):\n    def __init__(self, id: TeamId, name: str, players: List[str]):\n        self.id = id\n        self.name = name\n        self.players = players\n    @classmethod\n    def create(cls, id: TeamId, name: str, players: List[str]) -> 'Team':\n        return cls(id, name, players)\n    def to_primitives(self) -> dict:\n        return {",
+        "detail": "context.team.domain.team",
+        "documentation": {}
+    },
+    {
+        "label": "TeamRepository",
+        "kind": 6,
+        "importPath": "context.team.domain.team_repository",
+        "description": "context.team.domain.team_repository",
+        "peekOfCode": "class TeamRepository(ABC):\n    @abstractmethod\n    def get_by_id(self, team_id: str) -> Optional[Team]:\n        pass\n    @abstractmethod\n    def save(self, team: Team) -> Team:\n        pass\n    @abstractmethod\n    def get_all(self) -> list[Team]:\n        pass",
+        "detail": "context.team.domain.team_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TeamScrapingService",
+        "kind": 6,
+        "importPath": "context.team.infrastructure.services.team_scraping_service",
+        "description": "context.team.infrastructure.services.team_scraping_service",
+        "peekOfCode": "class TeamScrapingService:\n    def __init__(self, team_repository: TeamRepository):\n        self.team_repository = team_repository\n    def scrape_teams(self) -> List[Team]:\n        url = \"https://example.com/teams\"  # Replace with the actual URL\n        response = requests.get(url)\n        soup = BeautifulSoup(response.content, 'html.parser')\n        teams = []\n        for team_element in soup.select('.team'):  # Adjust the selector based on the actual HTML structure\n            team_name = team_element.select_one('.team-name').text.strip()",
+        "detail": "context.team.infrastructure.services.team_scraping_service",
+        "documentation": {}
+    },
+    {
+        "label": "MongoTeamRepository",
+        "kind": 6,
+        "importPath": "context.team.infrastructure.mongo_team_repository",
+        "description": "context.team.infrastructure.mongo_team_repository",
+        "peekOfCode": "class MongoTeamRepository(TeamRepository):\n    def __init__(self, db_url: str, db_name: str):\n        self.client = MongoClient(db_url)\n        self.db = self.client[db_name]\n        self.collection = self.db['teams']\n    def get_by_id(self, team_id: str) -> Team:\n        data = self.collection.find_one({\"_id\": ObjectId(team_id)})\n        return Team.from_primitives(data) if data else None\n    def save(self, team: Team) -> Team:\n        self.collection.update_one({\"_id\": team.id.value}, {\"$set\": team.to_primitives()}, upsert=True)",
+        "detail": "context.team.infrastructure.mongo_team_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TeamController",
+        "kind": 6,
+        "importPath": "context.team.presentation.team_controller",
+        "description": "context.team.presentation.team_controller",
+        "peekOfCode": "class TeamController:\n    # def __init__(self, team_service: TeamService):\n    def __init__(self):\n        # self.team_service = team_service\n        self.router = APIRouter()\n        self._add_routes()\n    def _add_routes(self):\n        self.router.post(\"/\", response_model=TeamResponse)(self.create_team)\n        self.router.get(\"/{team_id}\", response_model=TeamResponse)(self.get_team)\n        self.router.get(\"/\", response_model=list[TeamResponse])(self.get_all_teams)",
+        "detail": "context.team.presentation.team_controller",
+        "documentation": {}
+    },
+    {
+        "label": "TeamCreate",
+        "kind": 6,
+        "importPath": "context.team.schemas.team_create",
+        "description": "context.team.schemas.team_create",
+        "peekOfCode": "class TeamCreate(BaseModel):\n    name: str\n    players: List[str]  # List of player IDs that belong to the team\n    class Config:\n        orm_mode = True",
+        "detail": "context.team.schemas.team_create",
+        "documentation": {}
+    },
+    {
+        "label": "PlayerResponse",
+        "kind": 6,
+        "importPath": "context.team.schemas.team_response",
+        "description": "context.team.schemas.team_response",
+        "peekOfCode": "class PlayerResponse(BaseModel):\n    id: str\n    name: str\n    position: str\n    team: str\nclass TeamResponse(BaseModel):\n    id: str\n    name: str\n    players: List[PlayerResponse]\n    class Config:",
+        "detail": "context.team.schemas.team_response",
+        "documentation": {}
+    },
+    {
+        "label": "TeamResponse",
+        "kind": 6,
+        "importPath": "context.team.schemas.team_response",
+        "description": "context.team.schemas.team_response",
+        "peekOfCode": "class TeamResponse(BaseModel):\n    id: str\n    name: str\n    players: List[PlayerResponse]\n    class Config:\n        orm_mode = True\n    def to_primitives(self):\n        return {\n            \"id\": self.id,\n            \"name\": self.name,",
+        "detail": "context.team.schemas.team_response",
+        "documentation": {}
+    },
+    {
+        "label": "MongoConnection",
+        "kind": 6,
+        "importPath": "shared.database.mongo_connection",
+        "description": "shared.database.mongo_connection",
+        "peekOfCode": "class MongoConnection:\n    def __init__(self):\n        self.client = MongoClient(os.getenv(\"MONGODB_URI\"))\n        self.db = self.client[os.getenv(\"MONGODB_DB_NAME\")]\n    def get_database(self):\n        return self.db\nmongo_connection = MongoConnection()",
+        "detail": "shared.database.mongo_connection",
+        "documentation": {}
+    },
+    {
+        "label": "mongo_connection",
+        "kind": 5,
+        "importPath": "shared.database.mongo_connection",
+        "description": "shared.database.mongo_connection",
+        "peekOfCode": "mongo_connection = MongoConnection()",
+        "detail": "shared.database.mongo_connection",
+        "documentation": {}
+    },
+    {
+        "label": "AggregateRoot",
+        "kind": 6,
+        "importPath": "shared.domain.value_objects.aggregate_root",
+        "description": "shared.domain.value_objects.aggregate_root",
+        "peekOfCode": "class AggregateRoot(ABC):\n    @abstractmethod\n    def to_primitives(self):\n        pass\n    @classmethod\n    @abstractmethod\n    def from_primitives(cls, plain_data):\n        pass",
+        "detail": "shared.domain.value_objects.aggregate_root",
+        "documentation": {}
+    },
+    {
+        "label": "NumberValueObject",
+        "kind": 6,
+        "importPath": "shared.domain.value_objects.number_value_object",
+        "description": "shared.domain.value_objects.number_value_object",
+        "peekOfCode": "class NumberValueObject:\n    def __init__(self, value: int):\n        self.value = value\n    def equals_to(self, other: 'NumberValueObject') -> bool:\n        return self.value == other.value\n    def is_bigger_than(self, other: 'NumberValueObject') -> bool:\n        return self.value > other.value\n    def to_primitives(self) -> Any:\n        return self.value\n    @classmethod",
+        "detail": "shared.domain.value_objects.number_value_object",
+        "documentation": {}
+    },
+    {
+        "label": "StringValueObject",
+        "kind": 6,
+        "importPath": "shared.domain.value_objects.string_value_object",
+        "description": "shared.domain.value_objects.string_value_object",
+        "peekOfCode": "class StringValueObject:\n    def __init__(self, value: str):\n        self.value = value\n    def equals_to(self, other: 'StringValueObject') -> bool:\n        return self.value == other.value\n    def to_primitives(self) -> str:\n        return self.value\n    @classmethod\n    def from_primitives(cls, plain_data: str) -> 'StringValueObject':\n        return cls(plain_data)",
+        "detail": "shared.domain.value_objects.string_value_object",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI(\n  title=\"Football Stats API\",\n  description=\"API to fetch football player stats from Comunio and Comuniazo\",\n  version=\"1.0\"\n)\nplayer_controller = PlayerController()\nteam_controller = TeamController()\nmarket_controller = MarketController()\n@app.get(\"/\", include_in_schema=False)\nasync def root():",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "player_controller",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "player_controller = PlayerController()\nteam_controller = TeamController()\nmarket_controller = MarketController()\n@app.get(\"/\", include_in_schema=False)\nasync def root():\n    return RedirectResponse(url=\"/docs\")\napp.include_router(player_controller.router, prefix=\"/players\", tags=[\"players\"])\napp.include_router(team_controller.router, prefix=\"/teams\", tags=[\"teams\"])\napp.include_router(market_controller.router, prefix=\"/markets\", tags=[\"markets\"])\nif __name__ == \"__main__\":",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "team_controller",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "team_controller = TeamController()\nmarket_controller = MarketController()\n@app.get(\"/\", include_in_schema=False)\nasync def root():\n    return RedirectResponse(url=\"/docs\")\napp.include_router(player_controller.router, prefix=\"/players\", tags=[\"players\"])\napp.include_router(team_controller.router, prefix=\"/teams\", tags=[\"teams\"])\napp.include_router(market_controller.router, prefix=\"/markets\", tags=[\"markets\"])\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"0.0.0.0\", port=8000)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "market_controller",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "market_controller = MarketController()\n@app.get(\"/\", include_in_schema=False)\nasync def root():\n    return RedirectResponse(url=\"/docs\")\napp.include_router(player_controller.router, prefix=\"/players\", tags=[\"players\"])\napp.include_router(team_controller.router, prefix=\"/teams\", tags=[\"teams\"])\napp.include_router(market_controller.router, prefix=\"/markets\", tags=[\"markets\"])\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"0.0.0.0\", port=8000)",
+        "detail": "main",
+        "documentation": {}
+    }
+]

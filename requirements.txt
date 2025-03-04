@@ -1,9 +1,9 @@
-fastapi
+FastAPI
 uvicorn
 requests
 beautifulsoup4
-webdriver-manager
 selenium
+webdriver-manager
 python-dotenv
 unidecode
 pymongo[srv]
