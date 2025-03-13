@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Optional, List
-from .player_model import Player
+from .player import Player
 
 class PlayerRepository(ABC):
     @abstractmethod
