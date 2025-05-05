@@ -3,11 +3,12 @@ from backend.shared.domain.aggregate_root import AggregateRoot
 from .value_objects.player_id import PlayerId
 
 class Player(AggregateRoot):
-    def __init__(self, id: PlayerId, name: str, position: str, team: str):
+    def __init__(self, id: PlayerId, name: str, position: str, team: str, point: int = 0):
         self.id = id
         self.name = name
         self.position = position
         self.team = team
+        self.point = point
 
     @classmethod
     def create(cls, id: PlayerId, name: str, position: str, team: str) -> 'Player':
