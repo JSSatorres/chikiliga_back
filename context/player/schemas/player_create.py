@@ -13,3 +13,7 @@ class PlayerCreate(BaseModel):
     last_5_games_points: List[float] = Field(..., description="Player's points in last 5 games")
     team_last_5_games: List[str] = Field(..., description="Team's results in last 5 games")
     team_win_percentage: float = Field(..., description="Team's win percentage")
+    goals: int = Field(..., description="Total number of goals scored")
+    assists: int = Field(..., description="Total number of assists")
+    last_5_games_goals: List[int] = Field(..., description="Goals scored in last 5 games")
+    last_5_games_assists: List[int] = Field(..., description="Assists made in last 5 games")
