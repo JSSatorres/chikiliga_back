@@ -84,6 +84,7 @@ app = create_application()
 
 if __name__ == "__main__":
     import uvicorn
+    logger.info(f"Documentation available at http://{settings.HOST}:{settings.PORT}/docs")
     uvicorn.run(
         "main:app",
         host=settings.HOST,
