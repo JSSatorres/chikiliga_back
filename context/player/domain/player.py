@@ -1,5 +1,5 @@
 from typing import Any
-from backend.shared.domain.aggregate_root import AggregateRoot
+from shared.domain.aggregate_root import AggregateRoot
 from .value_objects.player_id import PlayerId
 
 class Player(AggregateRoot):
