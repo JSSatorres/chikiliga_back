@@ -9,3 +9,8 @@ unidecode
 pymongo[srv]
 pydantic
 pydantic-settings
+
+#LINTING
+mypy==1.15.0
+ruff==0.11.8
+
