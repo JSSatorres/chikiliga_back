@@ -23,6 +23,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Setup logging from dedicated config module
 from shared.core.config.logging import setup_logging
+from backend.api.v1.routes import api_router_v1
 logger = setup_logging()
 
 # Import API router after adding project root to path
@@ -70,7 +71,7 @@ def create_application() -> FastAPI:
 
     # Include API router
     # app.include_router(api_router, prefix=settings.API_V1_STR)
-
+    app.include_router(api_router_v1, prefix="/api/v1")
     @app.get("/", include_in_schema=False)
     async def root():
         """Redirect root to API documentation"""
