@@ -14,4 +14,4 @@ class CreatePlayer:
             position=player_create.position,
             team=player_create.team
         )
-        return await self.player_repository.save(player)
+        return await self.payerl_repository.save(player)
