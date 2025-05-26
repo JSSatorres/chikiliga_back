@@ -12,15 +12,7 @@ class MongoPlayerRepository(PlayerRepository):
         self.collection = self.db['players']
 
     async def find_by_id(self, player_id: PlayerId) -> Optional[Player]:
-        """
-        Busca un jugador por su ID.
-        
-        Args:
-            player_id: Value object que contiene el ID del jugador
-            
-        Returns:
-            Player entity si se encuentra, None si no existe
-        """
+
         try:
             data = self.collection.find_one({"_id": ObjectId(player_id.value)})
             if data:
@@ -33,15 +25,6 @@ class MongoPlayerRepository(PlayerRepository):
             return None
 
     async def save(self, player: Player) -> bool:
-        """
-        Guarda o actualiza un jugador en la base de datos.
-        
-        Args:
-            player: La entidad Player a guardar
-            
-        Returns:
-            True si se guardó correctamente, False en caso contrario
-        """
         try:
             player_data = player.to_primitives()
             # Usar el ID del player como _id de MongoDB
@@ -59,12 +42,6 @@ class MongoPlayerRepository(PlayerRepository):
             return False
 
     async def find_all(self) -> List[Player]:
-        """
-        Obtiene todos los jugadores de la base de datos.
-        
-        Returns:
-            Lista de entidades Player
-        """
         try:
             players = []
             for data in self.collection.find():
@@ -78,15 +55,6 @@ class MongoPlayerRepository(PlayerRepository):
             return []
 
     async def delete(self, player_id: PlayerId) -> bool:
-        """
-        Elimina un jugador de la base de datos.
-        
-        Args:
-            player_id: Value object que contiene el ID del jugador
-            
-        Returns:
-            True si se eliminó correctamente, False en caso contrario
-        """
         try:
             result = self.collection.delete_one({"_id": ObjectId(player_id.value)})
             return result.deleted_count > 0
@@ -94,15 +62,6 @@ class MongoPlayerRepository(PlayerRepository):
             return False
 
     async def exists(self, player_id: PlayerId) -> bool:
-        """
-        Verifica si existe un jugador con el ID dado.
-        
-        Args:
-            player_id: Value object que contiene el ID del jugador
-            
-        Returns:
-            True si existe, False en caso contrario
-        """
         try:
             count = self.collection.count_documents({"_id": ObjectId(player_id.value)})
             return count > 0
