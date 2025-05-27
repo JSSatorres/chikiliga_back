@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from backend.context.player.presentation.player_router import get_player_router
+from context.player.presentation.player_router import get_player_router
 
 api_router_v1 = APIRouter()
 
