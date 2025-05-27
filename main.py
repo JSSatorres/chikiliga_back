@@ -23,7 +23,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Setup logging from dedicated config module
 from shared.core.config.logging import setup_logging
-from backend.api.v1.routes import api_router_v1
+from api.v1.routes import api_router_v1
 logger = setup_logging()
 
 # Import API router after adding project root to path
