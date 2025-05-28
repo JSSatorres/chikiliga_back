@@ -7,4 +7,10 @@ class GetAllPlayers:
         self.player_repository = player_repository
 
     async def execute(self) -> List[Player]:
-        return await self.player_repository.get_all()
+        """
+        Retrieve all players from the repository.
+        
+        Returns:
+            List of all player entities
+        """
+        return await self.player_repository.find_all()
