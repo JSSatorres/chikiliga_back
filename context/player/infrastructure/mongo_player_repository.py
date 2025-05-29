@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from bson import ObjectId
 from context.player.domain.player_repository import PlayerRepository
 from context.player.domain.player import Player
-from context.player.domain.value_objects.player_id import PlayerId
+from shared.domain.value_objects.player_id import PlayerId
 
 class MongoPlayerRepository(PlayerRepository):
     def __init__(self, db_url: str, db_name: str):
