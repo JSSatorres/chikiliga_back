@@ -1,12 +1,76 @@
 {
+  "python.defaultInterpreterPath": "./venv/Scripts/python.exe",
+  "python.terminal.activateEnvironment": true,
+
+  // FORMATEO AUTOMÁTICO AL GUARDAR
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.ruff": true,
-    "source.organizeImports.ruff": true
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
   },
-  "ruff.lint.run": "onSave",
-  "ruff.path": ["${workspaceFolder}/venv/Scripts/ruff"],
+
+  // CONFIGURACIÓN DE RUFF (Linter y Formatter)
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit",
+      "source.fixAll.ruff": "explicit"
+    }
+  },
+
+  // RUFF SETTINGS
+  "ruff.lint.enable": true,
+  "ruff.format.enable": true,
+  "ruff.showNotifications": "always",
+  "ruff.fixAll": true,
+  "ruff.organizeImports": true,
+  "ruff.path": ["${workspaceFolder}/venv/Scripts/ruff"],
+  "ruff.lint.run": "onSave",
+
+  // MYPY CONFIGURACIÓN
+  "mypy-type-checker.enable": true,
+  "mypy-type-checker.severity": {
+    "error": "Error",
+    "note": "Information"
+  },
+
+  // PYTHON CONFIGURACIÓN GENERAL
+  "python.linting.enabled": false,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": false,
+  "python.formatting.provider": "none",
+
+  // INTELLISENSE Y AUTOCOMPLETADO
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+
+  // CONFIGURACIÓN DE ARCHIVOS
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // RULER PARA LÍNEA DE 88 CARACTERES
+  "editor.rulers": [88],
+
+  // CONFIGURACIÓN DE IMPORTS
+  "python.analysis.importFormat": "absolute",
+
+  // TESTING
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["tests"],
+
+  // EXCLUSIONES
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/venv": true,
+    "**/.mypy_cache": true,
+    "**/.ruff_cache": true,
+    "**/.pytest_cache": true
   }
 }
