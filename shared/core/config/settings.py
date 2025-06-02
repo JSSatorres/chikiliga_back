@@ -35,6 +35,10 @@ class Settings(BaseSettings):
     # Database settings
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./comunio_project.db")
     
+    # MongoDB settings
+    MONGODB_URL: str = os.getenv("MONGODB_URL", "mongodb://localhost:27017")
+    MONGODB_DATABASE: str = os.getenv("MONGODB_DATABASE", "comunio_project")
+    
     COMUNIO_USER: str = ""
     COMUNIO_PASSWORD: str = ""
     MONGO_USER: str = ""
@@ -46,6 +50,11 @@ class Settings(BaseSettings):
         env_file_encoding="utf-8",
         case_sensitive=True,
     )
+
+
+def get_settings() -> Settings:
+    """Get application settings instance"""
+    return Settings()
 
 
 settings = Settings()
